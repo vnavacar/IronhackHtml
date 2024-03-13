@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: salmon;
+    text-align: center;
+    width: 100%;
+}
+
+header h1 {
+    margin: 0;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    background: lightgray;
+}
+
+nav li {
+    padding: 10px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: black;
+}
+
+section h2 {
+    text-align: center;
+}
+
+section .sectionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+}
+
+section {
+    flex: 1 1 100%;
+    border-color: aqua;
+    border-width: 2px;
+    border-style: solid;
+}
+.articulo {
+    margin: 20px;
+    padding: 20px;
+    border-color: blue;
+    border-width: 2px;
+    border-style: solid;
+    align-items: center;
+}
+
+/* Estilos para desktop */
+@media (min-width: 768px) {
+
+
+    nav {
+        width: 20%;
+        height: fill-available;
+    }
+
+    #contenedor {
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    main {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        width: 80%;
+
+    }
+
+    #seccion1, #seccion2 {
+        flex: 3;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .articulo {
+        width: 30%;
+    }
+    .articuloBoton {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    button {
+        margin: 10px;
+        background-color: aquamarine;
+    }
+
+
+    nav li a:hover {
+        background: darkgray;
+    }
+}
+
+
+
+/* Estilos para móvil */
+@media (max-width: 767px) {
+
+    #menuNav {
+        display: none;
+    }
+    nav ul {
+        flex-direction: row;
+    }
+
+    section {
+        margin-bottom: 20px;
+    }
+}
