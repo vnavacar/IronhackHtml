@@ -75,6 +75,22 @@ body {
     flex-direction: column;
 }
 
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.Positivos {
+    color: green;
+}
+.Negativos {
+    color: red;
+}
+
 
 
 footer {
