@@ -40,12 +40,6 @@ nav li a {
 }
 
 
-section .sectionHeader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 main {
     display: flex;
     flex-wrap: column;
@@ -65,6 +59,8 @@ article img {
     max-width: 100%; 
     height: auto;
 }
+
+
 
 article h2 {
     text-align: center;
@@ -154,8 +150,20 @@ button[type="submit"]:hover {
 
 
     article {
-        width: calc(33.333% - 20px); /* Tres artículos con algo de espacio entre ellos */
-        margin-bottom: 0; /* Remover el margen inferior en desktop */
+        width: calc(33.333% - 20px); 
+        margin-bottom: 0; 
+    }
+
+    section {
+        margin-bottom: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+        background: lightgray;
+        width: 30%;
+    }
+    section img {
+        max-width: 100%; 
+        height: auto;
     }
 
 
@@ -174,8 +182,17 @@ button[type="submit"]:hover {
     }
 
     section {
+        width: 100%;
+        background-color: lightgray;
         margin-bottom: 20px;
     }
+
+    section img {
+        max-width: 100%; 
+        height: auto;
+    }
+
+
     main {
         display: flex;
         flex-direction: column;
