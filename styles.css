@@ -55,7 +55,10 @@ main {
 }
 
 article {
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: lightgray;
 }
 
 article img {
@@ -124,5 +127,9 @@ footer {
 
     section {
         margin-bottom: 20px;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
     }
 }
