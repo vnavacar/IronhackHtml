@@ -1,6 +1,13 @@
-body {
+
+html, body {
+    height: 100%;
     margin: 0;
     font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -42,8 +49,27 @@ section .sectionHeader {
 main {
     display: flex;
     flex-wrap: column;
+    flex: 1º;
     padding: 20px;
     justify-content: center;
+}
+
+article {
+    margin-bottom: 20px; 
+}
+
+article img {
+    max-width: 100%; 
+    height: auto;
+}
+
+article h2 {
+    text-align: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -52,7 +78,6 @@ footer {
     background: grey;
     text-align: center;
     width: 100%;
-    position: absolute;
     bottom: 0;
     height: min-content;
 }
@@ -72,32 +97,14 @@ footer {
     }
 
     main {
-        flex-wrap: nowrap;
-        flex-direction: column;
-        width: 80%;
-
-    }
-
-    #seccion1, #seccion2 {
-        flex: 3;
-        width: auto;
         display: flex;
-        flex-direction: row;
+        justify-content: space-between;
     }
 
-    .articulo {
-        width: 30%;
-    }
-    .articuloBoton {
-        width: 30%;
-        display: flex;
-        flex-direction: column;
-        margin: 20px;
-    }
 
-    button {
-        margin: 10px;
-        background-color: aquamarine;
+    article {
+        width: calc(33.333% - 20px); /* Tres artículos con algo de espacio entre ellos */
+        margin-bottom: 0; /* Remover el margen inferior en desktop */
     }
 
 
