@@ -8,6 +8,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+
 }
 
 header {
@@ -43,7 +44,8 @@ nav li a {
 main {
     display: flex;
     flex-wrap: column;
-    flex: 1º;
+    flex: 1;
+    flex-grow: 1;
     padding: 20px;
     justify-content: center;
 }
